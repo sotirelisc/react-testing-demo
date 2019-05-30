@@ -33,13 +33,7 @@ class CommentBox extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    comments: state.comments
-  };
-};
-
-export default connect(mapStateToProps, {
+export default connect(null, {
   saveComment,
   fetchComments
 })(CommentBox);
